@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpeakingAnalysis</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block meta %}
+    <title>Spin Topik - SpeakingAnalysis</title>
+{% endblock meta %}
+
+{% block content %}
     <main>
         {% if topic %}
             <p>{{ topic.title }}</p>
@@ -14,5 +13,4 @@
             <p>Belum ada topik</p>
         {% endif %}
     </main>
-</body>
-</html>
+{% endblock content %}
